@@ -67,11 +67,7 @@
       margin-bottom:20px;
       line-height:1.3;
     }
-    h2 {
-      color: black; /* 改黑色 */
-      margin-bottom: 15px;
-      font-size: 1.5em;
-    }
+    h2 { color: black; margin-bottom: 15px; font-size: 1.5em; }
 
     .code-section { margin-bottom: 25px; }
     .code-section p { color: #ff2d55; font-weight: bold; margin-bottom: 10px; font-size: 1.1em; }
@@ -100,14 +96,13 @@
 
     /* Footer 社群 */
     .footer {
-      margin: 20px auto 0;
-      max-width: 1200px; /* 跟折扣碼區塊一樣寬 */
-      padding: 15px 0;
+      margin: 10px auto 0;
+      padding: 10px 0;
       text-align: center;
     }
     .footer-title {
       font-size: 1.3em;
-      margin-bottom: 12px;
+      margin-bottom: 8px;
       font-weight: bold;
       color: #ff4d2d;
       text-shadow: 0 0 8px rgba(255,255,255,0.8);
@@ -115,24 +110,28 @@
     .footer-links {
       display:flex;
       justify-content:center;
-      gap:12px;
+      gap:8px;
+      flex-wrap: wrap; /* 手機版自動換行 */
     }
     .footer-links a {
-      flex: 1;
-      min-width: 120px;
-      text-align: center;
-      padding: 12px 0;
-      border-radius: 10px;
+      display: inline-block;
+      width: 90px;
+      padding: 6px 0;
+      border-radius: 8px;
       background: linear-gradient(135deg,#ff7a7a,#ff9a3d);
       color: #fff;
       text-decoration: none;
-      font-size: 1em;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+      font-size: 0.85em;
+      text-align:center;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
       transition: 0.25s;
     }
-    .footer-links a:hover { transform: scale(1.07); box-shadow: 0 6px 14px rgba(0,0,0,0.3); }
+    .footer-links a:hover { transform: scale(1.07); box-shadow: 0 5px 12px rgba(0,0,0,0.3); }
 
-    @media (max-width: 800px) { .two-column { flex-direction: column; } }
+    @media (max-width: 800px) {
+      .two-column { flex-direction: column; }
+      .footer-links a { width: 70px; font-size: 0.8em; } /* 手機按鈕更小 */
+    }
   </style>
 </head>
 <body>
@@ -207,8 +206,8 @@
   <div class="footer">
     <div class="footer-title">歡迎加入我的省錢社群 ✨</div>
     <div class="footer-links">
-      <a href="https://line.me/ti/g2/ARxvlA8qbIgJf6ut4bngnwDGnLWy3x62pbqiMw" target="_blank">LINE 社群</a>
-      <a href="https://www.threads.com/@dd_shopping_go" target="_blank">threads</a>
+      <a href="https://line.me/ti/g2/ARxvlA8qbIgJf6ut4bngnwDGnLWy3x62pbqiMw" target="_blank">LINE</a>
+      <a href="https://www.threads.com/@dd_shopping_go" target="_blank">Threads</a>
       <a href="https://www.dcard.tw/@t5976" target="_blank">Dcard</a>
     </div>
   </div>
